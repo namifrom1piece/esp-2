@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TapTranslate</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+        <a href="main-menu.html" id="navbar__logo">TapTranslate</a>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar_item">
+                    <a href="wordbank.html" class="navbar__links">Word Bank</a>    
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <ul class="word-list">
+            <li class="button" onclick="playAudio('hello')">
+                <img src="images/hello.png" alt="Hello">
+                <span>Hello</span>
+            </li>
+            <li class="button" onclick="playAudio('i_want')">
+                <img src="images/i_want.png" alt="I want">
+                <span>I want</span>
+            </li>
+            <li class="button" onclick="playAudio('help')">
+                <img src="images/help.png" alt="Help">
+                <span>Help</span>
+            </li>
+            <li class="button" onclick="playAudio('food')">
+                <img src="images/food.png" alt="Food">
+                <span>Food</span>
+            </li>
+            <li class="button" onclick="playAudio('water')">
+                <img src="images/water.png" alt="Water">
+                <span>Water</span>
+            </li>
+            <li class="button" onclick="playAudio('yes')">
+                <img src="images/yes.png" alt="Yes">
+                <span>Yes</span>
+            </li>
+            <li class="button" onclick="playAudio('no')">
+                <img src="images/no.png" alt="No">
+                <span>No</span>
+            </li>
+            <li class="button" onclick="playAudio('bathroom')">
+                <img src="images/bathroom.png" alt="Bathroom">
+                <span>Bathroom</span>
+            </li>
+            <li class="button" onclick="playAudio('more')">
+                <img src="images/more.png" alt="More">
+                <span>More</span>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <audio id="hello" src="audio/hello.mp3"></audio>
+    <audio id="i_want" src="audio/i_want.mp3"></audio>
+    <audio id="help" src="audio/help.mp3"></audio>
+    <audio id="food" src="audio/food.mp3"></audio>
+    <audio id="water" src="audio/water.mp3"></audio>
+    <audio id="yes" src="audio/yes.mp3"></audio>
+    <audio id="no" src="audio/no.mp3"></audio>
+    <audio id="bathroom" src="audio/bathroom.mp3"></audio>
+    <audio id="more" src="audio/more.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
