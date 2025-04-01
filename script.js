@@ -5,6 +5,16 @@ function playAudio(id) {
     }
 }
 
+document.querySelectorAll(".playButton").forEach(button => {
+    button.addEventListener("click", function() {
+        var audioFile = button.getAttribute("data-audio"); // Each button should have a data-audio attribute
+        if (audioFile) {
+            var audio = new Audio(`audio/${audioFile}`); // Replace 'audio/' with the correct folder path if needed
+            audio.play();
+        }
+    });
+});
+
 function scrollToDescription() {
     document.getElementById('description').scrollIntoView({ behavior: 'smooth' });
     setTimeout(() => {
