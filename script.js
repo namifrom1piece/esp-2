@@ -11,3 +11,7 @@ function scrollToDescription() {
         document.getElementById('description').classList.add('show-description');
     }, 500);
 }
+
+document.getElementById("startButton").addEventListener("click", function() {
+    window.location.href = "wordbank.html"; // Change this to the correct page
+});
