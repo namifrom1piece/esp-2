@@ -361,7 +361,18 @@ body {
     padding: 0 8px;
   }
   
+  .card img {
+    width: 270px;
+    height: 290px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+    display: block;
+  }
   .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 4px;
     overflow: hidden;
@@ -372,7 +383,7 @@ body {
   
   .about-section {
     padding: 50px;
-    text-align: center;
+    text-align: left;
     background-color: #ffffff;
     color: #000000;
   }
