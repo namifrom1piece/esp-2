@@ -582,7 +582,22 @@ body {
     text-align: center;
     border-radius: 12px;
     margin: 40px auto;
-    max-width: 900px;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 4s;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.features.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .features h2 {
