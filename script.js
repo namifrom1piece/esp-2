@@ -157,3 +157,26 @@ document.addEventListener('DOMContentLoaded', function() {
         queueElement.style.borderRadius = '5px';
     }
 });
+
+// fade in only when scrolled to this project section//
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".this-project");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target); // Only trigger once
+                }
+            });
+        },
+        {
+            threshold: 0.1
+        }
+    );
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
